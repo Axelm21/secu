@@ -1,0 +1,12 @@
+<!-- login.component.html -->
+
+<form (ngSubmit)="login()">
+    <label>Email</label>
+    <input [(ngModel)]="credentials.email" name="email" required>
+  
+    <label>Mot de passe</label>
+    <input [(ngModel)]="credentials.password" name="password" required>
+  
+    <button type="submit">Se connecter !</button>
+  </form>
+  
